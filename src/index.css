@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GitWhisper Design System - Developer-focused, modern aesthetic */
+
+@layer base {
+  :root {
+    /* Base colors - Clean slate foundation */
+    --background: 220 13% 9%;
+    --foreground: 220 9% 96%;
+
+    /* Card system - Elevated surfaces */
+    --card: 220 13% 11%;
+    --card-foreground: 220 9% 96%;
+
+    /* Interactive elements */
+    --popover: 220 13% 11%;
+    --popover-foreground: 220 9% 96%;
+
+    /* Primary brand - Emerald sophistication */
+    --primary: 158 64% 52%;
+    --primary-foreground: 220 13% 9%;
+    --primary-glow: 158 64% 62%;
+
+    /* Secondary system - Refined slate */
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 9% 96%;
+
+    /* Muted elements */
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 56%;
+
+    /* Accent system - Teal highlights */
+    --accent: 170 76% 42%;
+    --accent-foreground: 220 13% 9%;
+
+    /* System colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 220 9% 96%;
+
+    /* Borders and inputs */
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 158 64% 52%;
+
+    /* Design tokens */
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(220 13% 7%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 13% 13%));
+
+    /* Shadows with brand colors */
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.15);
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+  }
+
+  /* Light mode overrides for the design system */
+  .light {
+    --background: 220 9% 98%;
+    --foreground: 220 13% 9%;
+    --card: 220 9% 100%;
+    --card-foreground: 220 13% 9%;
+    --muted-foreground: 220 9% 46%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom utility classes for GitWhisper */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Hero text effects */
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  /* Interactive elements */
+  .hover-lift {
+    @apply transition-smooth hover:-translate-y-1 hover:shadow-elegant;
+  }
+
+  .hover-glow {
+    @apply transition-smooth hover:shadow-glow;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+}
