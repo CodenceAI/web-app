@@ -10,7 +10,7 @@ const CTA = () => {
           {/* Background Effects */}
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-50" />
           <div className="absolute top-4 right-4 w-20 h-20 bg-primary/5 rounded-full blur-2xl animate-glow-pulse" />
-          
+
           <div className="relative space-y-6">
             {/* CTA Header */}
             <div className="space-y-4">
@@ -18,26 +18,27 @@ const CTA = () => {
                 <Zap className="w-4 h-4" />
                 Ready to revolutionize your development workflow?
               </div>
-              
+
               <h2 className="text-4xl md:text-5xl font-bold">
-                Start Using <span className="text-glow">GitWhisper</span> Today
+                Start Using <span className="text-glow">CodenceAI</span> Today
               </h2>
-              
+
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Join thousands of developers who have transformed their code exploration experience with AI-powered insights
+                Join thousands of developers who have transformed their code
+                exploration experience with AI-powered insights
               </p>
             </div>
 
             {/* CTA Actions */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button variant="hero" size="xl" className="min-w-56" asChild>
-              <a href="/app">
-                <Zap className="w-5 h-5" />
-                Try GitWhisper Free
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </Button>
-              
+              <Button variant="hero" size="xl" className="min-w-56" asChild>
+                <a href="/app">
+                  <Zap className="w-5 h-5" />
+                  Try CodenceAI Free
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </Button>
+
               <Button variant="glass" size="xl" className="min-w-56">
                 <Github className="w-5 h-5" />
                 View on GitHub
@@ -46,7 +47,9 @@ const CTA = () => {
 
             {/* Secondary Actions */}
             <div className="pt-6 border-t border-border/50">
-              <p className="text-sm text-muted-foreground mb-4">Or deploy privately:</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Or deploy privately:
+              </p>
               <Button variant="outline" size="lg">
                 <Download className="w-4 h-4" />
                 Download for Self-Hosting
@@ -75,7 +78,7 @@ const CTA = () => {
               No Vendor Lock-in
             </div>
           </div>
-          
+
           <p className="text-xs text-muted-foreground">
             Free for open-source projects • Flexible licensing for enterprises
           </p>

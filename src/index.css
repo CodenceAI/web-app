@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* GitWhisper Design System - Developer-focused, modern aesthetic */
+/* CodenceAI Design System - Developer-focused, modern aesthetic */
 
 @layer base {
   :root {
@@ -96,7 +96,7 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 
-  /* Custom utility classes for GitWhisper */
+  /* Custom utility classes for CodenceAI */
   .gradient-primary {
     background: var(--gradient-primary);
   }

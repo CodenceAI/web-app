@@ -4,37 +4,43 @@ const features = [
   {
     icon: Search,
     title: "Semantic Code Search",
-    description: "Ask questions in natural language like 'Where is the authentication logic?' and get contextually relevant code snippets.",
+    description:
+      "Ask questions in natural language like 'Where is the authentication logic?' and get contextually relevant code snippets.",
     highlight: "Vector embeddings",
   },
   {
     icon: Brain,
     title: "Intelligent Explanations",
-    description: "Automatically generated explanations in plain English for complex code functionality and architecture patterns.",
+    description:
+      "Automatically generated explanations in plain English for complex code functionality and architecture patterns.",
     highlight: "AI-powered",
   },
   {
     icon: Shield,
     title: "Privacy-First Design",
-    description: "Fully offline support for private repositories. No sensitive code ever leaves your infrastructure.",
+    description:
+      "Fully offline support for private repositories. No sensitive code ever leaves your infrastructure.",
     highlight: "Zero data upload",
   },
   {
     icon: Code,
     title: "Multi-Language Support",
-    description: "Works with Python, JavaScript, Go, Rust, and more. Understands syntax and semantics across languages.",
+    description:
+      "Works with Python, JavaScript, Go, Rust, and more. Understands syntax and semantics across languages.",
     highlight: "Universal",
   },
   {
     icon: Zap,
     title: "Lightning Fast",
-    description: "Instant results powered by optimized vector search and efficient caching mechanisms.",
+    description:
+      "Instant results powered by optimized vector search and efficient caching mechanisms.",
     highlight: "Sub-second",
   },
   {
     icon: Globe,
     title: "Flexible Deployment",
-    description: "Public web UI for open-source projects or private deployment for enterprise security requirements.",
+    description:
+      "Public web UI for open-source projects or private deployment for enterprise security requirements.",
     highlight: "Your choice",
   },
 ];
@@ -46,10 +52,11 @@ const Features = () => {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
-            Why Developers <span className="text-primary">Love</span> GitWhisper
+            Why Developers <span className="text-primary">Love</span> CodenceAI
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Revolutionary features that transform how you explore and understand codebases
+            Revolutionary features that transform how you explore and understand
+            codebases
           </p>
         </div>
 

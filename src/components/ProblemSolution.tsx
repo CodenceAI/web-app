@@ -3,38 +3,46 @@ import { AlertTriangle, CheckCircle, ArrowRight } from "lucide-react";
 const problems = [
   {
     title: "Keyword-Only Search",
-    description: "Traditional code search relies on exact keyword matching, missing contextually relevant code.",
+    description:
+      "Traditional code search relies on exact keyword matching, missing contextually relevant code.",
   },
   {
     title: "Outdated Documentation",
-    description: "Documentation is often incomplete or outdated, forcing manual code exploration.",
+    description:
+      "Documentation is often incomplete or outdated, forcing manual code exploration.",
   },
   {
     title: "Privacy Concerns",
-    description: "Sensitive private repositories can't be sent to cloud services for analysis.",
+    description:
+      "Sensitive private repositories can't be sent to cloud services for analysis.",
   },
   {
     title: "Slow Onboarding",
-    description: "New contributors struggle to understand large codebases and architectural decisions.",
+    description:
+      "New contributors struggle to understand large codebases and architectural decisions.",
   },
 ];
 
 const solutions = [
   {
     title: "Semantic Understanding",
-    description: "Vector embeddings capture code meaning and context, not just syntax.",
+    description:
+      "Vector embeddings capture code meaning and context, not just syntax.",
   },
   {
     title: "AI-Generated Explanations",
-    description: "Real-time explanations generated directly from your actual codebase.",
+    description:
+      "Real-time explanations generated directly from your actual codebase.",
   },
   {
     title: "Local Deployment",
-    description: "Run GitWhisper entirely on your infrastructure with zero external dependencies.",
+    description:
+      "Run CodenceAI entirely on your infrastructure with zero external dependencies.",
   },
   {
     title: "Instant Code Navigation",
-    description: "Natural language queries help developers find and understand code immediately.",
+    description:
+      "Natural language queries help developers find and understand code immediately.",
   },
 ];
 
@@ -49,7 +57,8 @@ const ProblemSolution = () => {
             <span className="text-primary">Solution</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            GitWhisper solves the core challenges that slow down developers every day
+            CodenceAI solves the core challenges that slow down developers every
+            day
           </p>
         </div>
 
@@ -68,8 +77,12 @@ const ProblemSolution = () => {
                   className="p-4 rounded-lg bg-destructive/5 border border-destructive/20 hover:border-destructive/30 transition-smooth"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <h4 className="font-semibold text-destructive mb-2">{problem.title}</h4>
-                  <p className="text-muted-foreground text-sm">{problem.description}</p>
+                  <h4 className="font-semibold text-destructive mb-2">
+                    {problem.title}
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    {problem.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -86,7 +99,7 @@ const ProblemSolution = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-primary flex items-center gap-3">
               <CheckCircle className="w-6 h-6" />
-              GitWhisper Solutions
+              CodenceAI Solutions
             </h3>
             <div className="space-y-4">
               {solutions.map((solution, index) => (
@@ -95,8 +108,12 @@ const ProblemSolution = () => {
                   className="p-4 rounded-lg bg-primary/5 border border-primary/20 hover:border-primary/30 hover-glow transition-smooth"
                   style={{ animationDelay: `${(index + 4) * 100}ms` }}
                 >
-                  <h4 className="font-semibold text-primary mb-2">{solution.title}</h4>
-                  <p className="text-muted-foreground text-sm">{solution.description}</p>
+                  <h4 className="font-semibold text-primary mb-2">
+                    {solution.title}
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    {solution.description}
+                  </p>
                 </div>
               ))}
             </div>

@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 gradient-subtle" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-glow-pulse animation-delay-1000" />
-      
+
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
@@ -23,11 +23,16 @@ const Hero = () => {
             {/* Main Heading */}
             <div className="space-y-4 animate-slide-up">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-                <span className="text-glow">GitWhisper</span>
+                <span className="text-glow">CodenceAI</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
-                Revolutionary AI assistant that helps developers explore, understand, and debug 
-                <span className="text-primary font-semibold"> Git repositories</span> with semantic code search and intelligent explanations
+                Revolutionary AI assistant that helps developers explore,
+                understand, and debug
+                <span className="text-primary font-semibold">
+                  {" "}
+                  Git repositories
+                </span>{" "}
+                with semantic code search and intelligent explanations
               </p>
             </div>
 
@@ -49,12 +54,12 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-6 animate-slide-up">
-          <Button variant="hero" size="xl" className="min-w-48" asChild>
-            <a href="/app">
-              Try GitWhisper
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </Button>
+              <Button variant="hero" size="xl" className="min-w-48" asChild>
+                <a href="/app">
+                  Try CodenceAI
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </Button>
               <Button variant="glass" size="xl" className="min-w-48">
                 <Github className="w-5 h-5" />
                 View on GitHub
@@ -72,12 +77,12 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl hover-glow">
               <img
                 src={heroIllustration}
-                alt="GitWhisper AI interface showing semantic code search and intelligent explanations"
+                alt="CodenceAI AI interface showing semantic code search and intelligent explanations"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
             </div>
-            
+
             {/* Floating UI Elements */}
             <div className="absolute -top-4 -right-4 p-3 rounded-lg bg-card/90 backdrop-blur-sm border border-border/50 shadow-elegant animate-float">
               <div className="flex items-center gap-2 text-sm">

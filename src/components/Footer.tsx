@@ -9,12 +9,15 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">GW</span>
+                <span className="text-primary-foreground font-bold text-sm">
+                  CA
+                </span>
               </div>
-              <span className="text-xl font-bold">GitWhisper</span>
+              <span className="text-xl font-bold">CodenceAI</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              AI-powered assistant that revolutionizes how developers explore and understand Git repositories.
+              AI-powered assistant that revolutionizes how developers explore
+              and understand Git repositories.
             </p>
             <div className="flex gap-3">
               <a
@@ -126,11 +129,11 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>© 2024 GitWhisper. Made with</span>
+            <span>© 2025 CodenceAI. Made with</span>
             <Heart className="w-4 h-4 text-primary" />
             <span>for developers.</span>
           </div>
-          
+
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-smooth">
               Privacy Policy

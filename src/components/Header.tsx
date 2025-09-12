@@ -12,23 +12,37 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">GW</span>
+              <span className="text-primary-foreground font-bold text-sm">
+                GW
+              </span>
             </div>
-            <span className="text-xl font-bold">GitWhisper</span>
+            <span className="text-xl font-bold">CodenceAI</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm hover:text-primary transition-smooth">
+            <a
+              href="#features"
+              className="text-sm hover:text-primary transition-smooth"
+            >
               Features
             </a>
-            <a href="#how-it-works" className="text-sm hover:text-primary transition-smooth">
+            <a
+              href="#how-it-works"
+              className="text-sm hover:text-primary transition-smooth"
+            >
               How it Works
             </a>
-            <a href="#pricing" className="text-sm hover:text-primary transition-smooth">
+            <a
+              href="#pricing"
+              className="text-sm hover:text-primary transition-smooth"
+            >
               Pricing
             </a>
-            <a href="#docs" className="text-sm hover:text-primary transition-smooth">
+            <a
+              href="#docs"
+              className="text-sm hover:text-primary transition-smooth"
+            >
               Docs
             </a>
           </nav>
@@ -39,13 +53,13 @@ const Header = () => {
               <Github className="w-4 h-4" />
               GitHub
             </Button>
-              <Button variant="hero" size="lg" asChild>
-                <a href="/app">
-                  <Zap className="w-4 h-4" />
-                  Try GitWhisper Free
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
+            <Button variant="hero" size="lg" asChild>
+              <a href="/app">
+                <Zap className="w-4 h-4" />
+                Try CodenceAI Free
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -54,7 +68,11 @@ const Header = () => {
             className="md:hidden p-2 hover:bg-accent rounded-lg transition-smooth"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
           </button>
         </div>
 
@@ -91,14 +109,14 @@ const Header = () => {
                 Docs
               </a>
             </nav>
-            
+
             <div className="flex flex-col gap-3 pt-4 border-t border-border/50">
               <Button variant="ghost" size="sm" className="justify-start">
                 <Github className="w-4 h-4" />
                 GitHub
               </Button>
               <Button variant="default" size="sm" asChild>
-                <a href="/app">Try GitWhisper</a>
+                <a href="/app">Try CodenceAI</a>
               </Button>
             </div>
           </div>
