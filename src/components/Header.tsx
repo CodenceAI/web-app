@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Menu, X, Zap, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import codencelogo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +12,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">
-                GW
-              </span>
-            </div>
-            <span className="text-xl font-bold">CodenceAI</span>
+            <img
+              src={codencelogo}
+              alt="CodenceAI logo"
+              width={48}
+              height={48}
+              className="h-12 w-12 object-contain"
+            />
+            <span className="font-bold text-lg">CodenceAI</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Github, Upload, Link, Loader2, Zap, CheckCircle } from "lucide-react";
 import { RepoData } from "@/types/app";
+import codencelogo from "@/assets/logo.png";
 
 interface RepoSetupProps {
   onRepoLoad: (repo: RepoData) => void;
@@ -123,10 +124,8 @@ const RepoSetup = ({ onRepoLoad, isLoading }: RepoSetupProps) => {
         {/* Header */}
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">
-                GW
-              </span>
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center">
+              <img src={codencelogo} alt="" />
             </div>
             <h1 className="text-3xl font-bold">CodenceAI</h1>
           </div>

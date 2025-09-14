@@ -63,7 +63,7 @@ const ProblemSolution = () => {
         </div>
 
         {/* Problem-Solution Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Problems */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-destructive flex items-center gap-3">
@@ -85,13 +85,6 @@ const ProblemSolution = () => {
                   </p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Arrow Connector */}
-          <div className="hidden lg:flex justify-center items-center">
-            <div className="p-4 rounded-full bg-primary/10 animate-float">
-              <ArrowRight className="w-8 h-8 text-primary" />
             </div>
           </div>
 
