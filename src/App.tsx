@@ -6,7 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import App from "./pages/App";
 import NotFound from "./pages/NotFound";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const AppRouter = () => (
       <Sonner />
       <BrowserRouter>
         <Analytics />
+        <SpeedInsights />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/app" element={<App />} />
